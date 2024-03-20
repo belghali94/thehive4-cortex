@@ -17,9 +17,6 @@ services:
       - xpack.security.enabled=false
       - bootstrap.memory_lock=true
       - ES_JAVA_OPTS=-Xms256m -Xmx256m
-    user: 1007:1007
-    group_add: 
-        - 0
     ulimits:
       nofile:
         soft: 65536
