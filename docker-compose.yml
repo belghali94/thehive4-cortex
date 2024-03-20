@@ -51,4 +51,3 @@ services:
       - ./vol/thehive/db:/opt/thp/thehive/db
       - ./vol/thehive/index:/opt/thp/thehive/index
       - ./vol/thehive/data:/opt/thp/thehive/data
-    command: '--no-config --no-config-secret'
