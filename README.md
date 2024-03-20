@@ -9,6 +9,7 @@ You need to add path `/opt/cortex/jobs` to sharing folder on preference Docker
 ### process install
 
 -   Run the docker compose template `docker-compose up -d`
+-   You might need to change the right on the data and logs folder of the elasticsearch 'sudo chown 1000:1000 /data/compose/6/vol/elasticsearch/data && sudo chown 1000:1000 /data/compose/6/vol/elasticsearch/logs'
 -   On `http://locahost:9001`, click to update dataBase
 -   Connect you with admin user (default user: `admin@thehive.local`, password: `secret`) and create a Cortex organisation and a user with an API Key
 -   Copy the API key and set it in `vol/thehive/application.conf` on `key = "API_KEY_HERE"` to configure Cortex module
