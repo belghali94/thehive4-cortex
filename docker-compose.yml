@@ -44,6 +44,8 @@ services:
     image: 'thehiveproject/thehive4:latest'
     container_name: thehive4
     restart: unless-stopped
+    environment:
+      - CORTEX_API_KEY=6WT/GdlOkw4r3QrPqy9C8T6nHwZi7uxy
     ports:
       - '0.0.0.0:9000:9000'
     volumes:
